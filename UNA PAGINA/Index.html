@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="IMG/S.png">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/CSS.css">
+    <script src="JS/JS.js"></script>
+    <title>SEBASTIAN ROLDAN DAZA</title>
+</head>
+<body>
+    <header class="cabeza">
+        <navbar class="navbarbar contenedor"> <!--se pueden concatenar dos clases y unir estilos mientras no ocurra conflicto-->
+            <div class="navbarbar__logo">
+                <img src="IMG/S2.png" class="img-navbar">
+            </div>
+            <ul class="navbar__enlace navbar__enlace--menu">
+                <li class="navbar__items">
+                    <a href="index.html" class="navbar__enlaces"><b>Inicio</b></a>
+                </li>
+                <li class="navbar__items">
+                    <a href="registro.html" class="navbar__enlaces">Registro</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="iniciar_sesion.html" class="navbar__enlaces">Ingreso</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="qsomos.html" class="navbar__enlaces">Sobre Nosotros</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="contacto.html" class="navbar__enlaces">Contacto</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="#" class="navbar__enlaces" id="N">Blog</a>
+                </li>
+
+                <img src="./images/close.svg" class="navbar__close">
+            </ul>
+
+            <div class="navbar__menu">
+                <img src="./images/menu.svg" class="navbar__img">
+            </div>
+        </navbar>
+
+        <section class="cabeza__contenedor contenedor">
+            <h1 class="cabeza__title">
+                <div class="container">SEBASTIAN ROLDAN
+                    <h1 id="textAnimation"></h1></div></h1>
+            <p class="cabeza__parrafo">Siempre con optimismo ante los problemas.</p>
+            <a href="registro.html" class="regb">Inicio</a>
+        </section>
+    </header>
+</body>
+
+<footer class="pie">
+    <section class="pie__contenedor contenedor">
+        <navbar class="navbar navbar--pie">
+            <h2 class="pie__title">CREATIVE-STAR</h2>
+
+            <ul class="navbar__enlace navbar__enlace--pie">
+                <li class="navbar__items">
+                    <a href="index.html" class="navbar__enlaces">Inicio</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="registro.html" class="navbar__enlaces">Registro</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="qsomos.html" class="navbar__enlaces">Sobre Nosotros</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="contacto.html" class="navbar__enlaces">Contacto</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="#" class="navbar__enlaces" id="N">Blog</a>
+                </li>
+            </ul>
+        </navbar>
+
+        <form class="pie__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+            <h2 class="pie__newsletter">¡Suscribete a nuestro canal de noticias!</h2>
+            <div class="pie__inputs">
+                <input type="email" placeholder="Email:" class="pie__input" name="_replyto">
+                <input type="submit" value="Registrate" class="pie__submit">
+            </div>
+        </form>
+    </section>
+
+    <section class="pie__text2 contenedor">
+        <div class="pie__social">
+            <a href="#" class="pie__icons"><img src="./images/facebook.svg" class="pie__img"></a>
+            <a href="#" class="pie__icons"><img src="./images/twitter.svg" class="pie__img"></a>
+            <a href="#" class="pie__icons"><img src="./images/youtube.svg" class="pie__img"></a>
+        </div>
+
+        <h3 class="pie__copyright">Derechos reservados &copy; CREATIVE-STAR 2023</h3>
+    </section>
+</footer>
+
+</html>
+
