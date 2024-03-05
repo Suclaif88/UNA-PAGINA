@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100&family=Playpen+Sans&display=swap');
+:root {
+    --padding-contenedor: 100px 0;
+    --color-title: #ffffff;/*LETRAS, TITULOS ETC DE ESTE COLOR*/
+}/*Declaracion de estilos globales para usar en el resto del documento*/
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-contenedor);/*Invocacion de funcion por ejemplo*/
+}
+
+.cabeza {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.cabeza::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#0000008c, #0000008c), url('../IMG/Inicio.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+.b{
+    background: -webkit-linear-gradient(left, #000000, #790000, #000000);
+    background: linear-gradient(to right, #000000, #790000, #000000);
+}
+
+/* navbar */
+
+.navbarbar {
+    --padding-contenedor: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbarbar__logo img:hover{
+    cursor: default;
+}
+
+.navbar__enlace {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.navbar__enlace li:hover{
+    transform: scale(1.1);
+}
+
+.navbar__items {
+    list-style: none;
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+.navbar__enlaces {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar__img {
+    display: block;
+    width: 30px;
+}
+
+
+.navbar__close {
+    display: var(--mostrar, none);
+}
+.cabeza__contenedor {
+    max-width: 800px;
+    --padding-contenedor: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.cabeza__title {
+    font-size: 3rem;
+}
+
+.cabeza__parrafo {
+    margin-bottom: 20px;
+}
+
+.regb{
+    display: inline-block;
+    background-color: #5F9DF7;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+.regb:hover{
+    background-color: #3f88f5;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20%;
+  }
+  
+  #textAnimation {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fdfdfd;
+    overflow: hidden; /* Para ocultar el texto que se desborda */
+    white-space: nowrap; /* Evita el salto de línea */
+    margin: 0 auto; /* Centra el texto */
+    letter-spacing: .15em; /* Espaciado entre caracteres */
+    position: relative; /* Ajusta la posición del cursor */
+  }
+  
+  /* Animación de escritura */
+  #textAnimation::after {
+    content: '|'; /* Cursor parpadeante */
+    position: absolute; /* Posición relativa al texto */
+    top: 0; /* Alineación superior */
+    animation: blink-caret .75s step-end infinite; /* Animación de parpadeo */
+  }
+  
+  /* Animación de parpadeo del cursor */
+  @keyframes blink-caret {
+    from, to { opacity: 0 }
+    50% { opacity: 1 }
+  }
+.img-navbar:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+.pie{
+    background-color: #1D293F;
+}
+
+.pie__title{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.pie__title, .pie__newsletter{
+    color: #fff;
+}
+
+
+.pie__contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar--pie{
+    padding-bottom: 20px;
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+}
+
+.navbar__enlace--pie{
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.pie__inputs{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.pie__input{
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+}
+
+.pie__submit{
+    margin-left: auto;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px ;
+    background-color: #2091F9;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pie__text2{
+    --padding-contenedor: 30px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.pie__text2right{
+    font-weight: 300;
+}
+
+.pie__icons{
+    margin-bottom: 10px;
+}
+
+.pie__img{
+    width: 30px;
+}
+
+/* preciooo */
+
+.subtitulo {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.preciooo{
+    text-align: center;
+}
+
+.preciooo__tabla{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.preciooo__cuadro{
+    background-color: #1746A2;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    --color-plan: #000000;
+    --color-preciooo: #000000;
+    --bg-cta: #fff;
+    --color-cta: #000000;
+    --color-items: #000000;
+}
+
+.preciooo__cuadro--mejorp{
+    width: 370px;
+    padding: 60px 40px;
+    background-color: #181D50;
+    --color-plan: rgb(255, 255, 255);
+    --color-preciooo: #fff;
+    --bg-cta: #ffffff;
+    --color-cta: #000000;
+    --color-items: #ffffff;
+}
+
+
+.preciooo__nombre{
+    color: var(--color-plan);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.preciooo__preciooo{
+    font-size: 2.5rem;
+    color: var(--color-preciooo);
+}
+
+.preciooo__items{
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+}
+
+.preciooo__cta{
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--bg-cta);
+    font-weight: 600;
+    color: var(--color-cta);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+}
+
+.preciooo__cta:hover{
+    background-color: #FF731D;
+}
+
+/* qsomos */
+
+.qsomos{
+    background-color: #e5e5f7;
+}
+
+.qsomos__contenedor{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.qsomos__cuerpo{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.qsomos__cuerpo--mostrar{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.qsomos__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.qsomos__tex{
+    max-width: 700px;
+}
+
+.qsomos__course{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.qsomos__flecha{
+    width: 90%;
+    cursor: pointer;
+}
+
+/* Media queries */
+
+@media (max-width:800px){
+    .navbar__menu{
+        display: block;
+    }
+
+    .navbar__enlace--menu{
+        position: fixed;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .navbar__enlace--mostrar{
+        --mostrar: block;
+        opacity:1 ;
+        pointer-events: unset;
+    }
+
+    .navbar__close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .cabeza{
+        font-size: 2.5rem;
+    }
+
+
+    .acerca__main{
+        gap: 2em;
+    }
+
+    .acerca__icons:last-of-type{
+        grid-column: 1/-1;
+    }
+
+
+    .infoad__contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+
+    .infoad__imagen{
+        grid-row: 1/2;
+        justify-self: center;
+    }
+
+    .qsomos__contenedor{
+        grid-template-columns: 30px 1fr 30px;
+    }
+
+    .qsomos__cuerpo{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items:center ;
+    }
+
+
+    .qsomos__img{
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .preguntas__text2{
+        width: 100%;
+    }
+
+    .pie__contenedor{
+        flex-wrap: wrap;
+    }
+
+    .navbar--pie{
+        width: 100%;
+        justify-items: center;
+    }
+
+    .navbar__enlace--pie{
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .pie__form{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .pie__input{
+        flex: 1;
+    }
+
+}
+
+@media (max-width:600px){
+    .cabeza__title{
+        font-size: 2rem;
+    }
+
+    .cabeza__parrafo{
+        font-size: 1rem;
+    }
+
+    .subtitulo{
+        font-size: 1.8rem;
+    }
+
+    .preciooo__cuadro{
+        width: 90%;
+    }
+
+    .preciooo__cuadro--mejorp{
+        width: 90%;
+    }
+
+    .preciooo__preciooo{
+        font-size: 2rem;
+    }
+
+    .qsomos{
+        --padding-contenedor: 60px 0;
+    }
+
+    .qsomos__contenedor{
+        grid-template-columns: 28px 1fr 28px;
+        gap: .9em;
+    }
+
+    .qsomos__flecha{
+        width: 100%;
+    }
+
+    .qsomos__course{
+        margin-top: 15px;
+    }
+
+    .preguntas__title{
+        font-size: 1rem;
+    }
+
+    .pie__title{
+        justify-self: start;
+        margin-bottom: 15px;
+    }
+
+    .navbar--pie{
+        padding-bottom: 60px;
+    }
+
+    .navbar__enlace--pie{
+        justify-content: space-between;
+    }
+
+    .pie__inputs{
+        flex-wrap: wrap;
+    }
+
+    .pie__input{
+        flex-basis: 100%;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .pie__submit{
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
