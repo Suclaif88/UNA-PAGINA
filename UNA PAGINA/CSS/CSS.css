@@ -53,12 +53,13 @@
 }
 
 .navbar__enlace {
+    margin-right: 3px;
     margin-left: auto;
     padding: 0;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
-    gap: 2em;
+    gap: 3em;
 }
 
 .navbar__enlace li:hover{
@@ -410,11 +411,11 @@
 
 .imgES {
     position: absolute;
-    top: 10px; /* Ajusta la distancia superior según sea necesario */
-    right: 10px; /* Ajusta la distancia derecha según sea necesario */
-    width: 100px; /* Ancho de la imagen, ajusta según prefieras */
-    height: 100px; /* Alto de la imagen, ajusta según prefieras */
-    border-radius: 10px; /* Ajusta el radio para que coincida con el del contenedor */
+    top: 10px;
+    right: 10px; 
+    width: 100px; 
+    height: 100px;
+    border-radius: 10px; 
   }
 
 /* Media queries */
