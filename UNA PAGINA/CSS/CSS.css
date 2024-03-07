@@ -681,6 +681,7 @@
     height: 300px;
     background: red;
     position: absolute;
+    border: 2px solid black;
 }
 
 .triangle1{
@@ -690,6 +691,7 @@
     right: 100px;
     top: 100px;
     animation: t1 8s ease infinite;
+    border: 2px solid black;
 }
 
 .triangle2{
@@ -698,6 +700,7 @@
     background: linear-gradient(to left, #ee8105, #c7371e);
     top: 350px;
     animation: t2 9s ease infinite;
+    border: 2px solid black;
 }
 
 .triangle3{
@@ -706,6 +709,7 @@
     background: linear-gradient(to left, #1b8fc5, #df0f8f);
     left: 200px;
     animation: t3 7s ease infinite;
+    border: 2px solid black;
 }
 
 @keyframes t1 {
